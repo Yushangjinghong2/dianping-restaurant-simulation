@@ -1,6 +1,6 @@
 # Dianping Restaurant Simulation
 
-A prototype for simulating restaurant choice, dining, and review participation with customer and restaurant agents. The repository contains the simulation code and a small, anonymized initial portrait pool (20 restaurant profiles and 120 customer profiles).
+A prototype for simulating restaurant choice, dining, and review participation with customer and restaurant agents. The repository contains the simulation code and an initial portrait pool (20 restaurant profiles and 120 customer profiles). Customer identifiers are preserved as supplied in the source and have not been anonymized.
 
 ## Data and privacy
 
