@@ -1,0 +1,159 @@
+backends:
+  default_backend: &default_backend
+    temperature: 0.7
+    max_tokens: 1024
+    model: gpt-4o-2024-08-06
+    backend_type: openai-chat
+
+global_prompt:
+  boss: >-
+    You operate a restaurant competing with other restaurants. Each day, review
+    the previous results and decide how to improve your restaurant.
+  customer: >-
+    You are an independent customer. The simulation selects the restaurant for
+    you using a fixed probability rule. Follow that selection, choose dishes
+    from the assigned restaurant, and describe your own dining experience. Your
+    profile contains only fields derived from aggregated historical reviews;
+    do not assume demographics that are not provided.
+
+database_port_base: 9100
+max_days: 2
+profile_file: competeai/examples/choice_demo_profiles.json
+
+choice_model:
+  seed: 2026
+  epsilon: 0.05
+  exploration_floor: 0.20
+  recommendation_strength: 1.0
+  preference_strength: 0.5
+  repeat_penalty: 0.8
+  price_penalty: 0.5
+  recommendation_weights:
+    review_count: 0.35
+    recent_diners: 0.35
+    rating: 0.30
+players:
+  - name: Qin
+    agent_type: boss
+    role_desc: >-
+      You manage a simulated restaurant. Its starting cuisine, city, price level,
+      and historical platform signals come from an anonymized sample of real
+      Dianping data. Create a fictional restaurant identity and menu based on
+      that profile; do not claim to be the original real-world business.
+    backend: *default_backend
+  - name: Lin
+    agent_type: boss
+    role_desc: >-
+      You manage a simulated restaurant. Its starting cuisine, city, price level,
+      and historical platform signals come from an anonymized sample of real
+      Dianping data. Create a fictional restaurant identity and menu based on
+      that profile; do not claim to be the original real-world business.
+    backend: *default_backend
+  - name: Kai
+    agent_type: boss
+    role_desc: >-
+      You manage a simulated restaurant. Its starting cuisine, city, price level,
+      and historical platform signals come from an anonymized sample of real
+      Dianping data. Create a fictional restaurant identity and menu based on
+      that profile; do not claim to be the original real-world business.
+    backend: *default_backend
+  - name: Mei
+    agent_type: boss
+    role_desc: >-
+      You manage a simulated restaurant. Its starting cuisine, city, price level,
+      and historical platform signals come from an anonymized sample of real
+      Dianping data. Create a fictional restaurant identity and menu based on
+      that profile; do not claim to be the original real-world business.
+    backend: *default_backend
+  - name: Alice
+    agent_type: customer
+    role_desc: >-
+      You are a simulated customer. Use the historical review-derived preferences
+      supplied in your profile. The source data does not provide reliable
+      demographic attributes, so do not invent age, income, or identity details.
+    backend: *default_backend
+  - name: Bob
+    agent_type: customer
+    role_desc: >-
+      You are a simulated customer. Use the historical review-derived preferences
+      supplied in your profile. The source data does not provide reliable
+      demographic attributes, so do not invent age, income, or identity details.
+    backend: *default_backend
+  - name: Charlie
+    agent_type: customer
+    role_desc: >-
+      You are a simulated customer. Use the historical review-derived preferences
+      supplied in your profile. The source data does not provide reliable
+      demographic attributes, so do not invent age, income, or identity details.
+    backend: *default_backend
+  - name: Diana
+    agent_type: customer
+    role_desc: >-
+      You are a simulated customer. Use the historical review-derived preferences
+      supplied in your profile. The source data does not provide reliable
+      demographic attributes, so do not invent age, income, or identity details.
+    backend: *default_backend
+  - name: Ethan
+    agent_type: customer
+    role_desc: >-
+      You are a simulated customer. Use the historical review-derived preferences
+      supplied in your profile. The source data does not provide reliable
+      demographic attributes, so do not invent age, income, or identity details.
+    backend: *default_backend
+  - name: Fiona
+    agent_type: customer
+    role_desc: >-
+      You are a simulated customer. Use the historical review-derived preferences
+      supplied in your profile. The source data does not provide reliable
+      demographic attributes, so do not invent age, income, or identity details.
+    backend: *default_backend
+  - name: George
+    agent_type: customer
+    role_desc: >-
+      You are a simulated customer. Use the historical review-derived preferences
+      supplied in your profile. The source data does not provide reliable
+      demographic attributes, so do not invent age, income, or identity details.
+    backend: *default_backend
+  - name: Hannah
+    agent_type: customer
+    role_desc: >-
+      You are a simulated customer. Use the historical review-derived preferences
+      supplied in your profile. The source data does not provide reliable
+      demographic attributes, so do not invent age, income, or identity details.
+    backend: *default_backend
+  - name: Ian
+    agent_type: customer
+    role_desc: >-
+      You are a simulated customer. Use the historical review-derived preferences
+      supplied in your profile. The source data does not provide reliable
+      demographic attributes, so do not invent age, income, or identity details.
+    backend: *default_backend
+  - name: Judy
+    agent_type: customer
+    role_desc: >-
+      You are a simulated customer. Use the historical review-derived preferences
+      supplied in your profile. The source data does not provide reliable
+      demographic attributes, so do not invent age, income, or identity details.
+    backend: *default_backend
+
+scenes:
+  - name: restaurant_design
+    scene_type: restaurant_design
+    players:
+      - Qin
+      - Lin
+      - Kai
+      - Mei
+  - name: dine
+    scene_type: dine
+    players:
+      - Alice
+      - Bob
+      - Charlie
+      - Diana
+      - Ethan
+      - Fiona
+      - George
+      - Hannah
+      - Ian
+      - Judy

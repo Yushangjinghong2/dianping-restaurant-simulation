@@ -1,0 +1,10 @@
+Today is day <INPUT 0>. 
+
+The last few daybooks(Id indicates which day):
+<INPUT 1>
+
+Today's customer comments:
+<INPUT 2>
+
+Today's rival restaurant information:
+<INPUT 3> 

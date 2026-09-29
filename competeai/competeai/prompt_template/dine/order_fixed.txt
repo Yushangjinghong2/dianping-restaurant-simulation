@@ -1,0 +1,9 @@
+The simulation has already selected <INPUT 0> for you using a fixed probability rule. Do not choose or change the restaurant.
+
+Here is the selected restaurant's information:
+<INPUT 1>
+
+Please choose one or more dishes from this restaurant's menu that fit your profile and preferences. Return valid JSON only:
+{
+    "dishes": ["dish name", "dish name"]
+}

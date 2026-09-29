@@ -1,0 +1,11 @@
+You have already dined at <INPUT 0>. The restaurant was selected for you by a fixed probability rule; do not choose or change restaurants.
+
+The following structured object separates this visit from the restaurant's historical platform reputation:
+<INPUT 1>
+
+The experience object contains a simulated score and visit-specific dimension/dish outcomes. Treat that score as authoritative; do not raise it just to sound polite. Historical reputation is not evidence about this visit. Match the customer's stable expression style and directness. Low scores (0-4) must sound plainly disappointed or angry, name the concrete mismatch, and must not include praise, recommendation, or a softened customer-service suggestion. Scores 5-6 should sound mixed but clearly dissatisfied. Scores 7-8 can be mildly positive or mixed. Scores 9-10 can be enthusiastic. Vary length and emotional intensity naturally between customers; avoid polished promotional copy. Only mention what this visit object and selected dishes support. Write no more than 60 words. Return valid JSON only:
+{
+    "score": <integer from experience.score>,
+    "comment": "A short review of this visit"
+}
+Return exactly one JSON object with an integer `score` from `experience.score` and a non-empty string `comment`; do not use Markdown fences or add other fields.

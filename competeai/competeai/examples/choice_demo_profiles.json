@@ -1,0 +1,179 @@
+{
+  "profile_type": "anonymized_aggregates_from_real_historical_data",
+  "source_dataset": "Dianping_Three_Source_Merged",
+  "generated_on": "2026-09-24",
+  "random_seed": 2026,
+  "sampling": {
+    "restaurant_min_review_count": 30,
+    "customer_min_review_count": 5,
+    "restaurant_method": "uniform random sample without replacement, preferring distinct categories",
+    "customer_method": "uniform random sample without replacement from eligible reviewer IDs",
+    "retained_fields": "historical source fields are aggregated category, city, price, rating, and review counts only; spice preference and expression style below are explicit simulation assumptions, not source-data observations"
+  },
+  "restaurants": {
+    "Qin": {
+      "category": "烧烤",
+      "city": "大连",
+      "average_cost": 39.0,
+      "baseline_review_count": 100,
+      "baseline_rating": 5.84,
+      "source": "yongfeng"
+    },
+    "Lin": {
+      "category": "小吃",
+      "city": "上海",
+      "average_cost": 13.0,
+      "baseline_review_count": 36,
+      "baseline_rating": 6.83,
+      "source": "yongfeng"
+    },
+    "Kai": {
+      "category": "创意菜",
+      "city": "上海",
+      "average_cost": 135.0,
+      "baseline_review_count": 115,
+      "baseline_rating": 7.34,
+      "source": "yongfeng"
+    },
+    "Mei": {
+      "category": "自助餐",
+      "city": "武汉",
+      "average_cost": 37.0,
+      "baseline_review_count": 54,
+      "baseline_rating": 7.04,
+      "source": "yongfeng"
+    }
+  },
+  "customers": {
+    "Alice": {
+      "preferred_categories": [
+        "东北菜/家常菜",
+        "火锅",
+        "东北菜"
+      ],
+      "history_review_count": 10,
+      "price_reference": 60.8,
+      "price_basis": "mean of recorded review-level spending",
+      "spice_preference": "low",
+      "expression_directness": 0.85,
+      "expression_style": "brief and blunt"
+    },
+    "Bob": {
+      "preferred_categories": [
+        "客家菜",
+        "日本料理",
+        "江浙菜"
+      ],
+      "history_review_count": 5,
+      "price_reference": 62.5,
+      "price_basis": "mean of recorded review-level spending",
+      "spice_preference": "high",
+      "expression_directness": 0.70,
+      "expression_style": "concise and expressive"
+    },
+    "Charlie": {
+      "preferred_categories": [
+        "快餐简餐",
+        "小吃",
+        "面馆"
+      ],
+      "history_review_count": 67,
+      "price_reference": 74.05,
+      "price_basis": "mean of recorded review-level spending",
+      "spice_preference": "medium",
+      "expression_directness": 0.55,
+      "expression_style": "detailed and balanced"
+    },
+    "Diana": {
+      "preferred_categories": [
+        "其他中餐",
+        "快餐简餐",
+        "日本料理"
+      ],
+      "history_review_count": 5,
+      "price_reference": 67.4,
+      "price_basis": "mean of recorded review-level spending",
+      "spice_preference": "low",
+      "expression_directness": 0.90,
+      "expression_style": "short and candid"
+    },
+    "Ethan": {
+      "preferred_categories": [
+        "鲁菜",
+        "其他中餐",
+        "快餐简餐"
+      ],
+      "history_review_count": 145,
+      "price_reference": 68.33,
+      "price_basis": "mean of recorded review-level spending",
+      "spice_preference": "medium",
+      "expression_directness": 0.45,
+      "expression_style": "detailed and measured"
+    },
+    "Fiona": {
+      "preferred_categories": [
+        "包子",
+        "快餐/简餐",
+        "烧烤"
+      ],
+      "history_review_count": 5,
+      "price_reference": 20.0,
+      "price_basis": "mean of recorded review-level spending",
+      "spice_preference": "low",
+      "expression_directness": 0.75,
+      "expression_style": "brief and matter-of-fact"
+    },
+    "George": {
+      "preferred_categories": [
+        "小吃",
+        "寿司/简餐",
+        "快餐简餐"
+      ],
+      "history_review_count": 12,
+      "price_reference": 33.67,
+      "price_basis": "mean of recorded review-level spending",
+      "spice_preference": "high",
+      "expression_directness": 0.60,
+      "expression_style": "casual and expressive"
+    },
+    "Hannah": {
+      "preferred_categories": [
+        "快餐简餐",
+        "茶餐厅",
+        "其他中餐"
+      ],
+      "history_review_count": 11,
+      "price_reference": 51.86,
+      "price_basis": "mean of recorded review-level spending",
+      "spice_preference": "medium",
+      "expression_directness": 0.40,
+      "expression_style": "polite but specific"
+    },
+    "Ian": {
+      "preferred_categories": [
+        "其他小吃",
+        "快餐简餐",
+        "南京/江浙菜"
+      ],
+      "history_review_count": 7,
+      "price_reference": 13.83,
+      "price_basis": "mean of recorded review-level spending",
+      "spice_preference": "none",
+      "expression_directness": 0.95,
+      "expression_style": "very brief and blunt"
+    },
+    "Judy": {
+      "preferred_categories": [
+        "茶餐厅",
+        "其他火锅",
+        "家常菜"
+      ],
+      "history_review_count": 11,
+      "price_reference": 79.0,
+      "price_basis": "mean of recorded review-level spending",
+      "spice_preference": "low",
+      "expression_directness": 0.65,
+      "expression_style": "detailed and candid"
+    }
+  }
+}

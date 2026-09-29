@@ -1,0 +1,21 @@
+Today marks a new day for you to design and strategize for the restaurant, building upon past experiences and the latest information.
+
+1. Action Space
+Basic restaurant information, menu, chef, and advertisement.
+
+2. Rules
+Please keep in mind the following rules:
+(1) Strategies
+  - It is crucial to find the right approach for your restaurant, as this is the first and most important aspect. Consider factors such as selling more dishes at a lower cost, catering to a high-end clientele or other strategies
+(2) Chefs:
+  - You are not allowed to communicate with or train the chefs.
+  - The level of a chef is directly proportional to their salary. 
+(3) Dishes:
+  - The taste of the dish is determined by two aspects, one is the cost-effectiveness of the dish, and the other is the level of the chef
+  - Cost-effectiveness is the ratio of original price to selling price, The higher The value, the better the cost-effectiveness
+(4) Advertisement:
+  - The only available channel for advertising is the advertising module. If you wish to communicate with customers, you can only do so through this module.
+
+Your first task is to analyze the above information, then write it down.
+Your second task is to design or revise your strategy, then write it down.
+Your third task is to create a general plan based on this strategy, then write it down.

@@ -1,0 +1,245 @@
+{
+  "source": "Dianping_Beijing_Subset",
+  "seed": 20260929,
+  "target_ratio": "20 restaurants : 120 customer agents (1:6)",
+  "restaurant_count": 20,
+  "customer_agent_count": 120,
+  "customer_sampling_basis": "Stratified proportional sampling by archetype population share, with largest-remainder rounding; includes sparse-history cold-start cohort.",
+  "customer_group_distribution": [
+    {
+      "archetype": "东亚/东南亚料理 × 中价",
+      "population": 202,
+      "population_share": 0.001546,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "东亚/东南亚料理 × 低价",
+      "population": 164,
+      "population_share": 0.001255,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "东亚/东南亚料理 × 消费未知",
+      "population": 20,
+      "population_share": 0.000153,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "东亚/东南亚料理 × 高价",
+      "population": 327,
+      "population_share": 0.002503,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "中式地方菜/家常菜 × 中价",
+      "population": 3379,
+      "population_share": 0.02586,
+      "sampled_agents": 3,
+      "sample_share": 0.025
+    },
+    {
+      "archetype": "中式地方菜/家常菜 × 低价",
+      "population": 2008,
+      "population_share": 0.015367,
+      "sampled_agents": 2,
+      "sample_share": 0.016667
+    },
+    {
+      "archetype": "中式地方菜/家常菜 × 消费未知",
+      "population": 335,
+      "population_share": 0.002564,
+      "sampled_agents": 1,
+      "sample_share": 0.008333
+    },
+    {
+      "archetype": "中式地方菜/家常菜 × 高价",
+      "population": 4553,
+      "population_share": 0.034845,
+      "sampled_agents": 4,
+      "sample_share": 0.033333
+    },
+    {
+      "archetype": "冷启动/历史稀疏 × 低置信度",
+      "population": 102037,
+      "population_share": 0.780899,
+      "sampled_agents": 94,
+      "sample_share": 0.783333
+    },
+    {
+      "archetype": "口味/菜系分散 × 中价",
+      "population": 4251,
+      "population_share": 0.032533,
+      "sampled_agents": 4,
+      "sample_share": 0.033333
+    },
+    {
+      "archetype": "口味/菜系分散 × 低价",
+      "population": 3440,
+      "population_share": 0.026327,
+      "sampled_agents": 3,
+      "sample_share": 0.025
+    },
+    {
+      "archetype": "口味/菜系分散 × 消费未知",
+      "population": 230,
+      "population_share": 0.00176,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "口味/菜系分散 × 高价",
+      "population": 3115,
+      "population_share": 0.023839,
+      "sampled_agents": 3,
+      "sample_share": 0.025
+    },
+    {
+      "archetype": "快餐/小吃/面食 × 中价",
+      "population": 555,
+      "population_share": 0.004247,
+      "sampled_agents": 1,
+      "sample_share": 0.008333
+    },
+    {
+      "archetype": "快餐/小吃/面食 × 低价",
+      "population": 3177,
+      "population_share": 0.024314,
+      "sampled_agents": 3,
+      "sample_share": 0.025
+    },
+    {
+      "archetype": "快餐/小吃/面食 × 消费未知",
+      "population": 153,
+      "population_share": 0.001171,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "快餐/小吃/面食 × 高价",
+      "population": 204,
+      "population_share": 0.001561,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "火锅/麻辣 × 中价",
+      "population": 467,
+      "population_share": 0.003574,
+      "sampled_agents": 1,
+      "sample_share": 0.008333
+    },
+    {
+      "archetype": "火锅/麻辣 × 低价",
+      "population": 316,
+      "population_share": 0.002418,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "火锅/麻辣 × 消费未知",
+      "population": 54,
+      "population_share": 0.000413,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "火锅/麻辣 × 高价",
+      "population": 423,
+      "population_share": 0.003237,
+      "sampled_agents": 1,
+      "sample_share": 0.008333
+    },
+    {
+      "archetype": "烧烤/烤制 × 中价",
+      "population": 225,
+      "population_share": 0.001722,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "烧烤/烤制 × 低价",
+      "population": 83,
+      "population_share": 0.000635,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "烧烤/烤制 × 消费未知",
+      "population": 19,
+      "population_share": 0.000145,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "烧烤/烤制 × 高价",
+      "population": 186,
+      "population_share": 0.001423,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "自助/海鲜 × 中价",
+      "population": 43,
+      "population_share": 0.000329,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "自助/海鲜 × 低价",
+      "population": 15,
+      "population_share": 0.000115,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "自助/海鲜 × 消费未知",
+      "population": 14,
+      "population_share": 0.000107,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "自助/海鲜 × 高价",
+      "population": 100,
+      "population_share": 0.000765,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "西餐/披萨/牛排 × 中价",
+      "population": 144,
+      "population_share": 0.001102,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "西餐/披萨/牛排 × 低价",
+      "population": 73,
+      "population_share": 0.000559,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "西餐/披萨/牛排 × 消费未知",
+      "population": 27,
+      "population_share": 0.000207,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    },
+    {
+      "archetype": "西餐/披萨/牛排 × 高价",
+      "population": 327,
+      "population_share": 0.002503,
+      "sampled_agents": 0,
+      "sample_share": 0.0
+    }
+  ],
+  "cold_start_agents_with_individual_evidence_profiles": 94,
+  "cold_start_review_examples_included": 8,
+  "restaurant_sampling_basis": "Proportional stratified random sampling by broad cuisine family and average-cost tier.",
+  "qualification": "Customer agents are profiles sampled from the population. Restaurants are selected independently; no fixed six-customer assignment per store is implied."
+}
