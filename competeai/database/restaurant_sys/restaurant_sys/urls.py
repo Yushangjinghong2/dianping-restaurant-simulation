@@ -39,6 +39,7 @@ router.register(r"comment", comment_views.CommentViewSet, basename="comment")
 router.register(r"daybook", daybook_views.DayBookViewSet, basename="daybook")
 
 urlpatterns = [
+    path("api/v1/", include("simulation_api.urls")),
     path('', include(router.urls)),
     path('show/', Show, name="show"),
     path('score/', get_score_per_dish, name="score"),
